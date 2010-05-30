@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<service plugin="libsharingfmms.so" provider="fMMS"> 
+    
+    <accounts plugInSetup="1" plugInEdit="1">
+      <signup>http://mms.frals.se</signup> 
+      <password maxlen="32"/> 
+    </accounts> 
+    
+    <ui>
+        <name>MMS</name>
+        <icon type="post">@servicesdir@/sharing-fmms-post.png</icon>
+        <icon type="setup">@servicesdir@/sharing-fmms-setup.png</icon>
+    </ui> 
+</service>
+

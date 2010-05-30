@@ -1,0 +1,19 @@
+Source: sharing-fmms
+Section: libs
+Priority: optional
+Maintainer: Nick Leppänen Larsson <frals@frals.se>
+Build-Depends: debhelper (>= 5.0.0), 
+    libgtk2.0-dev, libglib2.0-dev, 
+    libconic0-dev, libosso-dev, 
+    libsharing-plugin-dev, libdbus-glib-1-dev
+Standards-Version: 3.8.0
+
+Package: sharing-fmms
+Section: libs
+XB-Maemo-Display-Name: Sharing plugin for fMMS
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, sharing-manager, libsharing0
+XSBC-Bugtracker: https://bugs.maemo.org/enter_bug.cgi?product=fMMS
+Description: fMMS Sharing Plugin
+ This plugin enables you to use the "Share via"-service
+ to quickly send media via MMS.
